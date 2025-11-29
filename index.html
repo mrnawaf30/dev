@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nawaf | Portfolio</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="nawaf.png" alt="Profile Photo" class="profile-img" />
+
+    <h1>Nawaf Alhajmi</h1>
+    <p>IT Engineer • Web Developer • Tech Enthusiast</p>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav id="navMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an Information Technology engineer with experience in web development, networking, databases, Technical support for applications and IT problem-solving.
+    </p>
+
+    <div class="info-box">
+      <h3>Personal Information</h3>
+      <p><strong>Name:</strong> Nawaf Alhagmi</p>
+      <p><strong>Title:</strong> IT Engineer / Web Developer</p>
+      <p><strong>Location:</strong> Yemen</p>
+      <p><strong>Email:</strong> <a href="mailto:mr.nawafkh30@gmail.com">mr.nawafkh30@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">.NET</div>
+      <div class="card">HTML / CSS / JavaScript</div>
+      <div class="card">React / APIs</div>
+      <div class="card">Networking & Systems</div>
+      <div class="card">Databases (MySQL / SQL Server)</div>
+      <div class="card">Cybersecurity Basics</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 id="projects-title">Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Hotel Website</h3>
+        <p>A full-featured hotel website with room listings, services, and online booking.</p>
+      </div>
+
+      <div class="card">
+        <h3>E-commerce Store</h3>
+        <p>A complete online store showcasing products, managing inventory, and supporting payments.</p>
+      </div>
+
+      <div class="card">
+        <h3>Service Marketplace App</h3>
+        <p>A service platform connecting professionals and clients with order tracking & rating.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+
+    <div class="cert-grid">
+
+      <div class="card cert-card">
+        <h3>Bachelor of Information Technology</h3>
+        <p>Presented by the University of Science and Technology.</p>
+        <a href="certificates/certun.pdf" target="_blank" class="cert-btn">View Certificate</a>
+      </div>
+
+      <div class="card cert-card">
+        <h3>Introduction to Social Media Marketing</h3>
+        <p>Presented by Meta Company.</p>
+        <a href="certificates/cert1.pdf" target="_blank" class="cert-btn">View Certificate</a>
+      </div>
+
+      <div class="card cert-card">
+        <h3>Technical Support Fundamentals</h3>
+        <p>Presented by Google Company.</p>
+        <a href="certificates/cretTSF.pdf" target="_blank" class="cert-btn">View Certificate</a>
+      </div>
+
+      <div class="card cert-card">
+        <h3>Professional Designer Scholarship</h3>
+        <p>Presented by the ITC Institute.</p>
+        <a href="certificates/cretitc.pdf" target="_blank" class="cert-btn">View Certificate</a>
+      </div>
+
+      <div class="card cert-card">
+        <h3>English Language Diploma</h3>
+        <p>Presented by the Global Institute.</p>
+        <a href="certificates/cretE.pdf" target="_blank" class="cert-btn">View Cert</a>
+      </div>
+
+      <div class="card cert-card">
+        <h3>CCTV Installation Course</h3>
+        <p>Presented by the University of Science and Technology.</p>
+        <a href="certificates/certcam.pdf" target="_blank" class="cert-btn">View Certificate</a>
+      </div>
+
+      <div class="card cert-card">
+        <h3>Launch Your Financial Project By AI</h3>
+        <p>Presented by Al-Hababi Company.</p>
+        <a href="certificates/cert2.pdf" target="_blank" class="cert-btn">View Certificate</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/Nawaf.AL-Hajmi" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://www.instagram.com/nawafkh_08" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/Nawaf-AL-Hagmi" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="mailto:mr.nawafkh30@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Nawaf – All Rights Reserved
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>

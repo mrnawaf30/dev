@@ -1,0 +1,252 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+/* Header */
+header {
+  background: #075472;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+/* Desktop Navigation */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #4da6ff;
+}
+
+/* Mobile Menu Icon */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+/* Sections */
+section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Titles */
+h2 {
+  border-left: 6px solid #111;
+  padding-left: 15px;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Info Box */
+.info-box {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  margin-top: 25px;
+}
+
+/* Grid Layout */
+.skills, 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background-color: #075472;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #111;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #4da6ff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #075472;
+  color: white;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* Certificates Section */
+#certificates {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: .3s;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.cert-btn {
+  display: inline-block;
+  background: #4da6ff;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.cert-btn:hover {
+  background: #1f8cff;
+}
+
+/* =============================
+   RESPONSIVE — MOBILE
+================================*/
+
+@media screen and (max-width: 768px) {
+
+  /* Make Header Smaller */
+  header {
+    padding: 40px 20px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header p {
+    font-size: 15px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* SHOW mobile menu icon */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hide nav by default on mobile */
+  nav {
+    display: none;
+    background: #064661;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  /* Show menu when active */
+  nav.active {
+    display: block;
+  }
+
+  /* Convert links to block */
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 769px) {
+  nav {
+    display: block; /* Always visible on desktop */
+  }
+}
